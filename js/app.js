@@ -27,7 +27,8 @@ $(document).ready(function() {
 	})
 	$('body').keydown(function(e) {
 		if(e.keyCode == 88) {
-			$('.ryu-still').hide();		
+			$('.ryu-still').hide();
+			$('.ryu-cool').show();		
 		}
 	})
 	$('body').keypress(function(e) {
@@ -37,6 +38,7 @@ $(document).ready(function() {
 	})
 	$('body').keyup(function(e) {
 		if(e.keycode == 88) {
+			$('ryu-cool').hide();
 			$('.ryu-still').show();
 		}
 	});
