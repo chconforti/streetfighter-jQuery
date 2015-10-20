@@ -27,8 +27,17 @@ $(document).ready(function() {
 	})
 	$('body').keydown(function(e) {
 		if(e.keyCode == 88) {
-			$('.ryu-still').hide();
-			$('.ryu-cool').show();			
+			$('.ryu-still').hide();		
+		}
+	})
+	$('body').keypress(function(e) {
+		if(e.keycode == 88) {
+			$('.ryu-cool').show();
+		}
+	})
+	$('body').keyup(function(e) {
+		if(e.keycode == 88) {
+			$('.ryu-still').show();
 		}
 	});
 });
